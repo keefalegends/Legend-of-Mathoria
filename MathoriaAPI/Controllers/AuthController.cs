@@ -17,6 +17,10 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public IActionResult Register(User user)
     {
+        var exist = _context.Users.FirstOrDefault(u => u.Username == user.Username);
+        if (exist != null)
+            return BadRequest("Username sudah ada");
+
         _context.Users.Add(user);
         _context.SaveChanges();
 
@@ -33,6 +37,11 @@ public class AuthController : ControllerBase
         if (user == null)
             return Unauthorized("Login gagal");
 
-        return Ok(new { message = "Login berhasil" });
+        return Ok(new 
+        { 
+            message = "Login berhasil",
+            username = user.Username,
+            score = user.Score
+        });
     }
 }
