@@ -1,0 +1,6 @@
+@MathoriaAPI_HostAddress = http://localhost:5182
+
+GET {{MathoriaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
