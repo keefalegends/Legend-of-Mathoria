@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MathoriaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6a39804ab4c89e74b7508cdcc9d57445a225bfe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc6d1a1098961a9f7bdc8bab24f8de9ba6a89beb")]
 [assembly: System.Reflection.AssemblyProductAttribute("MathoriaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MathoriaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
